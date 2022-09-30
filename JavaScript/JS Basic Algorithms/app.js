@@ -61,3 +61,13 @@ console.log(avenger);
 
 avengers.splice(0, 1, "IRONMAN");
 console.log(avengers);
+
+console.log(avengers.length);
+
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+rickAndMortyCharacters.push("Morty", "Summer");
+let rickAndMortyCharacter =
+  rickAndMortyCharacters[rickAndMortyCharacters.length - 1];
+console.log(rickAndMortyCharacter);
+
+console.log(rickAndMortyCharacters.length);
