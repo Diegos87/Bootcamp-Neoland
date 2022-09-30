@@ -54,3 +54,10 @@ let m = 5;
 
 let i = c * m;
 console.log(i);
+
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+let avenger = avengers[0];
+console.log(avenger);
+
+avengers.splice(0, 1, "IRONMAN");
+console.log(avengers);
