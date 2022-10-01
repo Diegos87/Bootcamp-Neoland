@@ -126,3 +126,9 @@ if (number2 / 2 || number1 / 5) {
     "number2 entre 2 es igual a number1 o number1 entre 5 es igual a number3"
   );
 }
+
+let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let index = 0; index < numbers.length; index++) {
+  const element = numbers[10];
+}
+console.log("no entiendo los bucles");
