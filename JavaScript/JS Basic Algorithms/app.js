@@ -94,3 +94,23 @@ const rickAndMortyCharacters2 = [
 
 rickAndMortyCharacters2.splice(1, 1);
 console.log(rickAndMortyCharacters2);
+
+const number1 = 10;
+const number2 = 20;
+const number3 = 2;
+
+if (number3 == 2) {
+  console.log("number2 dividido entre number1 es igual a 2");
+}
+
+if (number1 !== 20) {
+  console.log("number1 es estrictamente distinto a number2");
+}
+
+if (number3 != 10) {
+  console.log("numer3 es distinto a number1");
+}
+
+if (number3 == 2) {
+  console.log("number3 por 5 es igual a number1");
+}
