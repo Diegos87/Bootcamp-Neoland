@@ -67,3 +67,30 @@ console.log(avengers.length);
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
 rickAndMortyCharacters.push("Morty", "Summer");
 console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]);
+
+const rickAndMortyCharacters1 = [
+  "Rick",
+  "Beth",
+  "Jerry",
+  "Morty",
+  "Summer",
+  "Lapiz Lopez",
+];
+
+rickAndMortyCharacters1.pop();
+console.log(rickAndMortyCharacters1);
+
+console.log(rickAndMortyCharacters1[0]);
+console.log(rickAndMortyCharacters1[rickAndMortyCharacters1.length - 1]);
+
+const rickAndMortyCharacters2 = [
+  "Rick",
+  "Beth",
+  "Jerry",
+  "Morty",
+  "Summer",
+  "Lapiz Lopez",
+];
+
+rickAndMortyCharacters2.splice(1, 1);
+console.log(rickAndMortyCharacters2);
