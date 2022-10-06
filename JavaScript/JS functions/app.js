@@ -50,15 +50,6 @@ console.log(total);
 
 // Iteracion 4
 
-/*const numbers1 = [12, 21, 38, 5, 45, 37, 6];
-function average(numbers1) {
-  const total1 = numbers.reduce(
-    (accumulator, numbers1) => accumulator + numbers1,
-    0
-  );
-  return total1;
-}*/
-
 const numbers1 = [12, 21, 38, 5, 45, 37, 6];
 function average(numbers1) {
   let accumulator1 = 0;
@@ -69,3 +60,37 @@ function average(numbers1) {
 }
 let total1 = average(numbers1);
 console.log(total1);
+
+// Iteracion 5
+
+const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
+function averageWord(some) {}
+
+// Iteracion 6
+
+const duplicates = [
+  "sushi",
+  "pizza",
+  "burger",
+  "potatoe",
+  "pasta",
+  "ice-cream",
+  "pizza",
+  "chicken",
+  "onion rings",
+  "pasta",
+  "soda",
+];
+function removeDuplicates(things) {
+  let result = [];
+  for (let i = 0; i < things.length; i++) {
+    let thing = things[i];
+    if (!result.includes(things[i])) {
+      result.push(thing);
+    }
+  }
+  return result;
+}
+
+let newList = removeDuplicates(duplicates);
+console.log(newList);
