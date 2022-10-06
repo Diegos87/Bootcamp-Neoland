@@ -1,3 +1,5 @@
+// Iteracion 1
+
 let myFavoriteHero = "Hulk";
 console.log(myFavoriteHero);
 let x = 50;
@@ -8,6 +10,8 @@ console.log(x);
 console.log(h);
 console.log(y);
 console.log(z);
+
+// Iteracion 2
 
 const character = { name: "Jack Sparrow", age: "10" };
 character.age = "25";
@@ -34,6 +38,8 @@ console.log(car1);
 car2.finalPrice = car2.basePrice + globalBasePrice;
 console.log(car2);
 
+// Iteracion 3
+
 let multi = 10 * 5;
 console.log(multi);
 
@@ -54,6 +60,8 @@ let m = 5;
 
 let i = c * m;
 console.log(i);
+
+// Iteracion 4
 
 const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 let avenger = avengers[0];
@@ -95,6 +103,8 @@ const rickAndMortyCharacters2 = [
 rickAndMortyCharacters2.splice(1, 1);
 console.log(rickAndMortyCharacters2);
 
+// Iteracion 5
+
 const number1 = 10;
 const number2 = 20;
 const number3 = 2;
@@ -126,6 +136,8 @@ if (number2 / 2 || number1 / 5) {
     "number2 entre 2 es igual a number1 o number1 entre 5 es igual a number3"
   );
 }
+
+// Iteracion 6
 
 for (let i = 0; i < 10; i++) console.log(i);
 
