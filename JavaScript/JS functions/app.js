@@ -64,7 +64,20 @@ console.log(total1);
 // Iteracion 5
 
 const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
-function averageWord(some) {}
+const averageWord = (some) => {
+  let add = 0;
+  for (let valor of some) {
+    if (typeof valor === "number") {
+      add += valor;
+    } else {
+      add += valor.length;
+    }
+  }
+  return add;
+};
+
+let totales = averageWord(mixedElements);
+console.log(totales);
 
 // Iteracion 6
 
@@ -94,3 +107,31 @@ function removeDuplicates(things) {
 
 let newList = removeDuplicates(duplicates);
 console.log(newList);
+
+// Iteracion 7
+
+const nameFinder = [
+  "Peter",
+  "Steve",
+  "Tony",
+  "Natasha",
+  "Clint",
+  "Logan",
+  "Xabier",
+  "Bruce",
+  "Peggy",
+  "Jessica",
+  "Marc",
+];
+
+const finderName = (heroes, hero) => {
+  let heroesNewList = heroes.indexOf(hero);
+  if (heroesNewList === -1) {
+    return false;
+  } else {
+    return true, heroesNewList;
+  }
+};
+
+let heroesList = finderName(nameFinder, "Logan");
+console.log(heroesList);
