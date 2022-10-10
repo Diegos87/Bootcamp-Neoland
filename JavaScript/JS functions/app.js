@@ -135,3 +135,49 @@ const finderName = (heroes, hero) => {
 
 let heroesList = finderName(nameFinder, "Logan");
 console.log(heroesList);
+
+let heroesList1 = finderName(nameFinder, "Ironman");
+console.log(heroesList1);
+
+const finderName1 = (hola, chau) => {
+  let hello = "";
+  for (let i = 0; i < hola.length; i++) {
+    if (hola[i] === chau) {
+      hello = i;
+    }
+  }
+  return hello;
+};
+let familia = finderName1(nameFinder, "Tony");
+console.log(familia);
+
+// Iteracion 8
+
+const counterWords = [
+  "code",
+  "repeat",
+  "eat",
+  "sleep",
+  "code",
+  "enjoy",
+  "sleep",
+  "code",
+  "enjoy",
+  "upgrade",
+  "code",
+];
+
+const repeatCounter = (todas, totales1) => {
+  let accumulator2 = 0;
+  for (let p = 0; p < todas.length; p++) {
+    for (let k = 0; k < todas[p].length; k++) {
+      if (todas[p][k] === totales1) {
+        accumulator2++;
+      }
+    }
+  }
+  return accumulator2;
+};
+
+let elementos = repeatCounter(counterWords, "code");
+console.log(elementos);
