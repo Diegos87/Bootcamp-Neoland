@@ -167,17 +167,27 @@ const counterWords = [
   "code",
 ];
 
-const repeatCounter = (todas, totales1) => {
-  let accumulator2 = 0;
-  for (let p = 0; p < todas.length; p++) {
-    for (let k = 0; k < todas[p].length; k++) {
-      if (todas[p][k] === totales1) {
-        accumulator2++;
-      }
-    }
-  }
-  return accumulator2;
-};
+let unicos = [];
+let almacenador = [];
+let counter = "";
 
-let elementos = repeatCounter(counterWords, "code");
-console.log(elementos);
+for (let i = 0; i < counterWords.length; i++)
+  if (counterWords[i + 1] === counterWords[i]) {
+    console.log("se repite el numero " + counterWords[i]);
+    counter++;
+  }
+console.log(unicos);
+console.log(almacenador);
+
+// const repeatCounter = (repetidos, cantidad) => {
+//   let accumulator2 = 0;
+//   for (let i = 0; i < repetidos.length; i++) {
+//     if (repetidos[i + 1] === repetidos[i]) {
+//       accumulator2++;
+//     }
+//   }
+//   return accumulator2;
+// };
+
+// let elementos = repeatCounter(counterWords, "code");
+// console.log(elementos);
