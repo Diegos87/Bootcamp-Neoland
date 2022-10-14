@@ -15,12 +15,14 @@ const movies = [
   },
 ];
 
-const categories1 = [];
+let newMovies = [];
 
-for (let categorie of movies) {
-  if (!categorie.categories.includes("comedia", "aventura")) {
-    categories1.push(categorie);
+for (let movie of movies) {
+  for (categorie of movie.categories) {
+    if (!newMovies.includes(categorie)) {
+      newMovies.push(categorie);
+    }
   }
 }
 
-console.log(categories1);
+console.log(newMovies);
