@@ -145,3 +145,50 @@ const favorites = (sonidos) => {
 
 let all = favorites(users1);
 console.log(all);
+
+//iteracion 4
+
+let array = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
+
+const findArrayIndex = (array, text) => {
+  array.forEach((element, index) => {
+    if (text == element) {
+      console.log(index);
+    }
+  });
+};
+
+findArrayIndex(array, "Caracol");
+findArrayIndex(array, "Mosquito");
+findArrayIndex(array, "Salamandra");
+findArrayIndex(array, "Ajolote");
+findArrayIndex(array, "Tiburon");
+
+// iteracion 5
+
+// iteracion 6
+
+const rollDice = (lados) => {
+  return Math.ceil(Math.random() * lados);
+};
+
+console.log(rollDice(6));
+
+// iteracion 6
+
+let jugadores = [
+  "Mesirve",
+  "Cristiano Romualdo",
+  "Fernando Muralla",
+  "Ronalguiño",
+];
+
+const swap = (jugador, index1, index2) => {
+  const player1 = jugador[index1];
+  const player2 = jugador[index2];
+  jugador[index1] = player2;
+  jugador[index2] = player1;
+  console.log(jugador);
+};
+
+swap(jugadores, 3, 1);
