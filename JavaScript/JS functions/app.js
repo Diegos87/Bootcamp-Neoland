@@ -168,14 +168,12 @@ const counterWords = [
 ];
 
 const repeatCounter = (list) => {
-  let contador = 0
-  let repetidos = []
+  let contador = 0;
+  let repetidos = [];
   list.forEach((element) => {
-    list.forEach((element) => {
-      if()
-    })
-  })
-}
+    list.forEach((element) => {});
+  });
+};
 // const repeatCounter = (list) => {
 //   let unicos = [];
 //   list.forEach((element) => {
