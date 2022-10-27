@@ -134,6 +134,20 @@ let usersName = [];
 users.forEach((user) => {
   usersName.push(user.name);
 });
-
-let usersNames = users.map((user) => user.name);
 console.log(usersName);
+
+const usersNames = users.map((user) => user.name);
+console.log(usersNames);
+
+//4.2
+let usersNameWithA = [];
+const usersNameWithA1 = users.map((user) => {
+  if (user.name.charAt(0) == "A") {
+    user = "Anacleto";
+    usersNameWithA.push(user);
+  } else {
+    usersNameWithA.push(user.name);
+  }
+});
+
+console.log(usersNameWithA);
