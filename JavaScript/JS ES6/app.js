@@ -129,13 +129,6 @@ const users = [
   { id: 4, name: "Amanda" },
 ];
 
-let usersName = [];
-
-users.forEach((user) => {
-  usersName.push(user.name);
-});
-console.log(usersName);
-
 const usersNames = users.map((user) => user.name);
 console.log(usersNames);
 
@@ -151,3 +144,85 @@ const usersNameWithA1 = users.map((user) => {
 });
 
 console.log(usersNameWithA);
+
+//4.3
+
+const cities = [
+  { isVisited: true, name: "Tokyo" },
+  { isVisited: false, name: "Madagascar" },
+  { isVisited: true, name: "Amsterdam" },
+  { isVisited: false, name: "Seul" },
+];
+
+const citiesVisited = cities.map((citie) => {
+  if (citie.isVisited == true) {
+    citie.name += " Visited";
+  }
+  return citie.name;
+});
+
+console.log(citiesVisited);
+
+// iteracion 5
+
+//5.1
+
+const ages = [22, 14, 24, 55, 65, 21, 12, 13, 90];
+
+const overEighteen = ages.filter((age) => age > 18);
+console.log(overEighteen);
+
+//5.2
+
+const parAges = ages.filter((age) => age % 2 == 0);
+console.log(parAges);
+
+//5.3
+
+const streamers = [
+  { name: "Rubius", age: 32, gameMorePlayed: "Minecraft" },
+  { name: "Ibai", age: 25, gameMorePlayed: "League of Legends" },
+  { name: "Reven", age: 43, gameMorePlayed: "League of Legends" },
+  { name: "AuronPlay", age: 33, gameMorePlayed: "Among Us" },
+];
+
+const leagueOfLegends = streamers.filter(
+  (streamer) => streamer.gameMorePlayed === "League of Legends"
+);
+
+console.log(leagueOfLegends);
+
+//5.4
+
+const nameWithU = streamers.filter((streamer) => streamer.name.includes("u"));
+console.log(nameWithU);
+
+//5.5
+
+const newStreamers = streamers.filter((streamer) => {
+  const returnLegends = streamer.gameMorePlayed
+    .toLowerCase()
+    .includes("legends");
+  if (returnLegends && streamer.age > 35) {
+    streamer.gameMorePlayed = streamer.gameMorePlayed.toUpperCase();
+  }
+  return returnLegends;
+});
+console.log(newStreamers);
+
+//6.1
+
+const numbers = [32, 21, 63, 95, 100, 67, 43];
+const found = numbers.find((number) => number === 100);
+console.log(found);
+
+//6.2
+
+const movies = [
+  { title: "Madagascar", stars: 4.5, date: 2015 },
+  { title: "Origen", stars: 5, date: 2010 },
+  { title: "Your Name", stars: 5, date: 2016 },
+];
+
+const foundMovie = movies.find((year) => year.date === 2010);
+console.log(foundMovie);
